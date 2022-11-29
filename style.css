@@ -1,0 +1,86 @@
+/* Essentials Content */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: line-through;
+}
+/* Nav Content */
+.navcontainer{
+    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform .25s ease-out;
+    transform: translateX(100%);
+}
+.navopen{
+    transform: translateX(0);
+}
+.navclose{
+    transform: translateX(100%);
+}
+.buttonhamburger{
+    position: fixed;
+    right: 0;
+    padding: 13% 9%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 25px;
+}
+.title{
+    width: 100%;
+    padding: 20% 10%;
+}
+.title a:hover{
+    text-decoration: none;
+}
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+.links a{
+    padding: 10%;
+}
+/* Main Content */
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbackground{
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.3;
+    position: absolute;
+}
+.maincontent{
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px white;
+}
